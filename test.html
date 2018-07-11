@@ -1,0 +1,36 @@
+<?php
+ echo '1';
+function foo($param1, $param2 = array('a', 'b', 'c'))
+{
+echo $param1 . ', ' . $param2;
+}
+
+foo(12);
+
+
+ echo '2';
+$a = array('a', 'b', 'c');
+function foo($param1, $param2 = $a)
+{
+return $param1 . ', ' . $param2;
+}
+
+$foo(12);
+
+ echo '3';
+
+$foo = function($param1, $param2 = function($c = 12) { return $c; })
+{
+return $param1 . ', ' . $param2;
+}
+
+$foo(12);
+
+  echo '4';
+$foo = function($param1, $param2 = array('a', 'b', 'c'))
+{
+echo $param1 . ', ' . $param2;
+};
+foo(12);
+
+?>
