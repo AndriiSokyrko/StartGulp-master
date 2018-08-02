@@ -3,7 +3,8 @@
 instalation
 -----------
 
-Node js ошибка установки пакета — MSBUILD : error MSB3428: Загрузка компонента Visual C++ «VCBuild.exe» невозможна
+Node js ошибка установки пакета — MSBUILD : error MSB3428: Загрузка компонента Visual C++ «VCBuild.exe» невозможна или ошибка 
+Python27 not found 
 Способы решения проблемы указанные в логах ошибки:
 
 1) установка .NET Framework 2.0 SDK,
